@@ -59,10 +59,8 @@ header .btn a {
 video {
     object-fit: cover;
     width: 100%;
-    border-radius: 23px;
     height: 90vh;
     position: absolute;
-    padding: 12px;
     top: 0;
     left: 0;
 }
@@ -72,7 +70,12 @@ video {
     height: 90vh;
     z-index: 400;
     border-radius: 10px;
-    margin-bottom: 0px;
+}
+
+.home .home-bg
+{
+    padding: 12px 12px 12px 12px;
+    border-radius: 23px;
 }
 
 .home-content {
@@ -92,8 +95,10 @@ video {
     font-weight: 400;
 }
 
+
+
+
 .about {
-    display: block;
     position: relative;
     background-color: #e4f1ff;
     width: 100%;
@@ -181,24 +186,29 @@ video {
 
 .programs {
     position: relative;
-    background: url(/assets/images/Gallery/flag-demo-bg.jpg) no-repeat;
-    background-size: cover;
-    background-color: rgb(255, 255, 255);
-    background-blend-mode: multiply;
-    height: auto;
-    border-radius: 10px;
     margin-bottom: 15px;
-    height: 85vh;
+    height: 90vh;
+}
+
+.programs .flag-bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
 }
 
 .programs-content {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 60%;
     margin: 0 auto;
-    padding: 80px;
+    z-index: 400;
 }
 
 .programs-content h1 {
@@ -210,7 +220,7 @@ video {
 .programs-content p {
     font-weight: 400;
     font-size: 18px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .programs-content .btn {
@@ -218,7 +228,21 @@ video {
     font-size: 15px;
     padding-top: 35px;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.programs-content .btn span{
+    margin-left: 10px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
