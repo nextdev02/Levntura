@@ -91,7 +91,7 @@ video {
     color: white;
     position: absolute;
     left: 80px;
-    top: 470px;
+    bottom: 150px;
 }
 
 .home-content p
@@ -101,7 +101,7 @@ video {
 
 .home-content h1
 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 62px;
     font-weight: 400;
 }
@@ -199,4 +199,159 @@ video {
     font-size: 40px;
     line-height: 50px;
     word-spacing: 4px;
+}
+
+
+
+.programs
+{
+    position: relative;
+    background: url(/assets/images/Gallery/flag-demo-bg.jpg) no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-blend-mode: multiply;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 85vh;
+}
+
+.programs-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.programs-content h1
+{
+    font-weight: 400;
+    font-size: 38px;
+    text-align: start;
+}
+
+.programs-content p
+{
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.programs-content .btn 
+{
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 35px;
+    color: black;
+}
+
+
+
+
+.careers
+{
+    display: block;
+    position: relative;
+    background-color: #dbf6ea;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.careers-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.careers-content h1
+{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 50px;
+    word-spacing: 4px;
+    padding-bottom: 80px;
+}
+
+.careers-content .slider
+{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.careers-content .slider img
+{
+    width: 330px;
+    border-radius: 20px;
+}
+
+
+
+
+
+.work
+{
+    display: block;
+    position: relative;
+    background-color: #fcf6ed;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.work-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.work-content h1
+{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+    word-spacing: 4px;
+    padding-bottom: 20px;
+}
+
+.work-content p
+{
+    font-size: 18px;
+    padding-bottom: 30px;
+
+}
+
+.work-content .slider
+{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.work-content .slider img
+{
+    width: 730px;
+    height: 220px;
+    border-radius: 20px;
 }
