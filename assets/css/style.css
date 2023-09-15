@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
-
+@font-face {
+    font-family: 'Gelion';
+    src: url('/assets/font/Gelion\ Regular.ttf') format('tff'),
+         url('/assets/font/Gelion\ Light.ttf') format('woff');
+    /* Add additional formats if needed */
+  }
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ body {
     max-width: 1700px;
     color: black;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gelion', sans-serif;
 }
 
 a {
@@ -59,30 +63,33 @@ header .btn a {
 video {
     object-fit: cover;
     width: 100%;
-    height: 90vh;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+
+/* ----------------- Home Page ----------------- */
+
 .home {
     width: 100%;
-    height: 90vh;
     z-index: 400;
     border-radius: 10px;
+    height: 650px;
 }
 
 .home .home-bg
 {
     padding: 12px 12px 12px 12px;
     border-radius: 23px;
+    height: 650px;
 }
 
 .home-content {
     color: white;
     position: absolute;
     left: 80px;
-    bottom: 150px;
+    bottom: 250px;
 }
 
 .home-content p {
@@ -95,14 +102,18 @@ video {
     font-weight: 400;
 }
 
-
+/* ----------------- About Page ----------------- */
 
 
 .about {
     position: relative;
     background-color: #e4f1ff;
     width: 100%;
-    height: auto;
+    height: 644px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -114,7 +125,6 @@ video {
     justify-content: center;
     width: 60%;
     margin: 0 auto;
-    padding: 80px;
 }
 
 .about-content p {
@@ -139,35 +149,38 @@ video {
 }
 
 
-
+/* ----------------- Gallery ----------------- */
 
 .gallery {
     display: block;
     position: relative;
     background-color: #fcf6ed;
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .gallery-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     width: 60%;
     margin: 0 auto;
-    padding: 80px;
 }
 
-.gallery-content p {
-    font-size: 18px;
-    line-height: 30px;
+.gallery-content h1 {
+    font-size: 34px;
+    line-height: 50px;
+    word-spacing: 4px;
+    padding-bottom: 15px;
 }
+
 
 .gallery-content .slider {
-    height: 380px;
+    height: 300px;
     width: 100%;
     display: flex;
     gap: 50px;
@@ -176,18 +189,19 @@ video {
     overflow: hidden;
 }
 
-.gallery-content h1 {
-    font-size: 40px;
-    line-height: 50px;
-    word-spacing: 4px;
+
+.gallery-content p {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 15px;
 }
 
 
 
 .programs {
     position: relative;
+    height: 644px;
     margin-bottom: 15px;
-    height: 90vh;
 }
 
 .programs .flag-bg
@@ -195,12 +209,13 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+    height: 644px;
     border-radius: 10px;
 }
 
 .programs-content {
     position: absolute;
-    left: 50%;
+    left: 47%;
     top: 10%;
     transform: translate(-50%);
     display: flex;
@@ -213,19 +228,19 @@ video {
 
 .programs-content h1 {
     font-weight: 400;
-    font-size: 38px;
+    font-size: 34px;
     text-align: start;
 }
 
 .programs-content p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 15px;
 }
 
 .programs-content .btn {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 35px;
     color: black;
     display: flex;
@@ -252,7 +267,11 @@ video {
     position: relative;
     background-color: #dbf6ea;
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -268,7 +287,7 @@ video {
 }
 
 .careers-content h1 {
-    font-size: 70px;
+    font-size: 66px;
     font-weight: 400;
     line-height: 50px;
     word-spacing: 4px;
@@ -297,7 +316,7 @@ video {
     position: relative;
     background-color: #fcf6ed;
     width: 100%;
-    height: auto;
+    height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -346,7 +365,7 @@ video {
     position: relative;
     background-color: #eeeffd;
     width: 100%;
-    height: auto;
+    height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -396,7 +415,7 @@ video {
     position: relative;
     background-color: #dbf6ea;
     width: 100%;
-    height: auto;
+    height: 297px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -475,7 +494,7 @@ button
     position: relative;
     background-color: #faf0e1;
     width: 100%;
-    height: auto;
+    height: 360px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
