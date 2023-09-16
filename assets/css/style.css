@@ -39,6 +39,8 @@ nav
     justify-content: space-between;
     padding: 30px 80px;
     background-color: #fff;
+    margin: 0 auto;
+    z-index: 10;
 }
 
 nav .nav-items 
@@ -120,12 +122,13 @@ video {
     border-radius: 10px;
     height: 750px;
     z-index: 100;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .home .home-bg
 {
-    padding: 12px 12px 12px 12px;
-    border-radius: 23px;
+    border-radius: 15px;
     height: 750px;
 }
 
@@ -133,7 +136,7 @@ video {
     color: white;
     position: absolute;
     left: 80px;
-    bottom: 100px;
+    top: 550px;
 }
 
 .home-content p {
@@ -160,7 +163,7 @@ video {
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about-content {
@@ -168,29 +171,34 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .about-content p {
     font-size: 16px;
     line-height: 30px;
+    width: 60%;
 }
 
-.about-content .slider {
+.about-content .clients-slider {
+    padding-top: 23px;
     height: 180px;
     width: 100%;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    padding: 100px 0;
-    overflow: hidden;
+    padding-left: 20%;
+
 }
+
+.about-content .clients-slider img{
+    filter: grayscale(100%);
+}
+
 
 .about-content h1 {
     font-size: 34px;
     line-height: 50px;
     word-spacing: 4px;
+    width: 60%;
 }
 
 
@@ -208,16 +216,20 @@ video {
     height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .gallery-content {
-
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
 }
 
 .gallery-content h1 {
+    width: 60%;
     font-size: 34px;
     line-height: 50px;
     word-spacing: 4px;
@@ -225,18 +237,21 @@ video {
 }
 
 
-.gallery-content .slider {
+.gallery-content .gallery-slider {
     height: 300px;
     width: 100%;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    padding: 100px 0;
-    overflow: hidden;
+    padding-left: 10%;
+}
+
+.gallery-content .gallery-slider img{
+    height: 300px;
+    width: 100%;
+    margin-left: 30%;
 }
 
 
 .gallery-content p {
+    width: 60%;
     font-size: 16px;
     line-height: 23px;
     padding-top: 15px;
@@ -248,7 +263,7 @@ video {
     position: relative;
     height: 644px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .programs .flag-bg
@@ -320,7 +335,7 @@ video {
     height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .careers-content {
@@ -366,7 +381,7 @@ video {
     height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .work-content {
@@ -414,7 +429,7 @@ video {
     height: 644px;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .service-content {
@@ -461,7 +476,7 @@ video {
     height: 297px;
     border-radius: 10px;
     margin-bottom: 15px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .email-content {
