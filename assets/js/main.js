@@ -3,9 +3,9 @@
 const header = document.querySelector("header")
 
 window.addEventListener("scroll", function () {
-    header.classList.toggle("scrolled", window.scrollY > 13);
-    console.log(this.window.scrollY);
-    
+  header.classList.toggle("scrolled", window.scrollY > 13);
+  console.log(this.window.scrollY);
+
 });
 
 // Header For Mobile
@@ -28,6 +28,36 @@ let clientswiper = new Swiper(".clients-slider", {
   pagination: {
     clickable: true,
   },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4.5,
+    },
+
+    1050: {
+      slidesPerView: 6,
+    },
+
+
+
+  },
 });
 
 
@@ -46,26 +76,44 @@ let galleryswiper = new Swiper(".gallery-slider", {
   keyboard: true,
   breakpoints: {
 
-        // When screen width is greater than or equal to 768 pixels
-        768: {
-          slidesPerView: 1.5, // Display 3 slides per view
-        },
-        
-    // When screen width is greater than or equal to 768 pixels
-    768: {
-      slidesPerView: 1.5, // Display 3 slides per view
-    },
-    // When screen width is greater than or equal to 1024 pixels
-    1090: {
-      slidesPerView: 1, // Display 4 slides per view
+    300: {
+      slidesPerView: 1,
     },
 
-    1150: {
-      slidesPerView: 2, // Display 4 slides per view
+    450: {
+      slidesPerView: 1.5,
     },
 
-    1224: {
-      slidesPerView: 2.3, // Display 4 slides per view
+    550: {
+      slidesPerView: 1.8,
+    },
+
+    650: {
+      slidesPerView: 1.1,
+    },
+
+    800: {
+      slidesPerView: 1.3,
+    },
+
+    950: {
+      slidesPerView: 1.6,
+    },
+
+    950: {
+      slidesPerView: 1.6,
+    },
+
+    1050: {
+      slidesPerView: 1.8,
+    },
+
+    1050: {
+      slidesPerView: 2,
+    },
+
+    1300: {
+      slidesPerView: 2.4,
     },
   },
 });
@@ -80,6 +128,50 @@ let careerswiper = new Swiper(".careers-slider", {
   pagination: {
     clickable: true,
   },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 1,
+    },
+
+    450: {
+      slidesPerView: 1,
+    },
+
+    550: {
+      slidesPerView: 1.5,
+    },
+
+    650: {
+      slidesPerView: 1.7,
+    },
+
+    800: {
+      slidesPerView: 2,
+    },
+
+    950: {
+      slidesPerView: 2,
+    },
+
+    950: {
+      slidesPerView: 2.3,
+    },
+
+    1050: {
+      slidesPerView: 2.7,
+    },
+
+    1050: {
+      slidesPerView: 3,
+    },
+
+    1300: {
+      slidesPerView: 3.7,
+    },
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -100,6 +192,8 @@ let workswiper = new Swiper(".work-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  
   keyboard: true,
 });
 
@@ -107,14 +201,10 @@ let workswiper = new Swiper(".work-slider", {
 // Service Slider
 
 let serviceswiper = new Swiper(".service-slider", {
-  slidesPerView: 2.6,
+  slidesPerView: 1.5,
   spaceBetween: 1,
   pagination: {
     clickable: true,
   },
   keyboard: true,
-  breakpoints: {
-    
-    
-  },
 });
