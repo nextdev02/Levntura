@@ -9,6 +9,18 @@ window.addEventListener("scroll", function () {
     
 });
 
+// Header For Mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navItems = document.querySelector(".nav-items");
+
+  menuToggle.addEventListener("click", function () {
+      menuToggle.classList.toggle("open");
+      navItems.classList.toggle("show");
+  });
+});
+
+
 
 
 // Client Logo Slider
